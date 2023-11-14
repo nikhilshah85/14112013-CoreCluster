@@ -1,0 +1,132 @@
+Pre-requisite
+a. fundamentals of OOPS/HTML, CSS and JS
+b. Environment
+	- Visual Studio 2019/2022
+	- SQL Server
+	- GITHUB - for demos and presentations, notes, visuals 
+
+Goals
+
+
+Expectations
+1. be interactive - ask questions, share views
+2. be on time, complete task, examples, assignments, demos etc...do answer questions 
+
+
+Name: Nikhil Shah
+Technical intro : ...
+Expectaations:
+Have Software in place ? : Yes/No
+
+
+
+
+
+
+
+
+
+
+							What is .net core ?
+
+	
+	1. Since 2003 We had .net framework (one of the top framework/most used framework) for application development
+			many types of application, Libraries, winforms, wpf, wcf, webapps,asp.net, mobile apps etc... almost every type of application
+
+
+
+					since 2015, there is an ERA of start ups, there is a challange to use .net framework as below
+
+
+				a. .net framework is completly windows based, i.e develop only on windows
+					for a team of 20 developers
+
+					1. Needs OS - windows only - buy a licence for everyone (huge investment) - why not use Ubuntu - free
+					2. need Visual Studio - buy a licence - huge investment (why not use Java/Eclipse) - this is free
+					3. For production - need only Windows Server - very high cost
+					4. Clients ? - also will have to force your client to use windows
+				
+
+		1.against this, Java, linux, is completely free
+		2. .net had its own challanges, old patters, microsoft based design etc, did not had open source patters like MVC, DI, API based etc...heavy
+		3. Growing craze of other light weight frameworks, Angular, Node, React etc....
+
+			Thus microsoft was loosing
+--------------------------------------------------------------------------------------------------------------------------------------------------
+			Thus MS had to re-write whole framework to
+			1. Make it opensource, free of cost, available on any OS
+				New Goal : Develop anywhere, use anywhere - .Net Core
+			2. They gave VS Code, 1 of the most used development tool, available for all OS, free, light weight
+			3. Added more open sourec patterns, like MVC, DI, Repository pattern, support for JSON(which is replacement of XML), REST
+			4. You can create .Net Angular, .Net React projects on .net core
+				Angular, React are used to create client centric logic, SPA applications
+				.Net core for server centric logic
+
+				now you can combine, both the login in 1 single appliction 
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+			first .net core application, lets do it in a free way
+			we will use command prompt, vs code to devlope, compile and run the application
+
+
+			dotnet new mvc --name shoppingAPP-MVC
+			dotnet build
+			dotnet run
+
+
+
+
+			Layout page = Master page in asp.net
+			Partial Page = custom control in asp.net (reuable on multiple pages)
+			@RenderBody() = contentplaceholder control in asp.net
+			
+		
+
+
+			.net core cli commands
+			https://learn.microsoft.com/en-us/dotnet/core/tools/
+
+		
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
