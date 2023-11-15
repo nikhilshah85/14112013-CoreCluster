@@ -1,0 +1,27 @@
+Day 2 Plan
+
+ASP.Net Core MVC Development begins tomorrow
+---------------------------------------------------------------------
+	
+	ASP.Net (Framework, without MVC) was like a spegattic code, where UI, Logic and DAL was all mixed into 1-2 files)
+
+-------------------------------------
+	MVC - web page will have 3 different layers
+
+		M - Model(.cs file) - data layer of a page
+				CRUD operations with data layer, Collection, database, file etc..
+				Calculation, validation of data, formatting of data 
+					happens in this file
+					ADO.net, EF, Data Structures etc...
+					Server Side REST API / WebAPI calls useing HttpClient
+
+		V - View (.cshtml file) - UI part of a page
+			Html, CSS, JS, JQuery, Bootstrap etc..		
+			Razor syntax (short hand Html, css, JS)
+			- You make client side REST API / WebAPI calls useing Fetch
+
+		C - Controller (.cs file) - collect data from Model pass it to view
+					    collect data from view and pass it to Model
+					security, authentication, encryption, etc...
+					When you make a request, controller is the first file server sends a request to 
+

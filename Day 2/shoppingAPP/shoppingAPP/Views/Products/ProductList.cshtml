@@ -1,0 +1,22 @@
+﻿
+
+<h1> List Of Products  </h1>
+
+Categories : <select>
+    @foreach (var item in ViewBag.productsCategory)
+    {
+        <option> @item</option>
+    }
+
+</select>
+
+<br/>
+
+Product : <span>
+
+    @foreach (var item in ViewBag.products)
+    {
+        <input type="checkbox" value="@item"/> @item
+    }
+
+</span>

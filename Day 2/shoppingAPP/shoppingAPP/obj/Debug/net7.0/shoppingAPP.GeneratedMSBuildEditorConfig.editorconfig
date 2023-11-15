@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = shoppingAPP
+build_property.RootNamespace = shoppingAPP
+build_property.ProjectDir = C:\Users\nikhi\OneDrive\Desktop\14112023 - Microsoft Core Cluster\14112013-CoreCluster\Day 2\shoppingAPP\shoppingAPP\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\nikhi\OneDrive\Desktop\14112023 - Microsoft Core Cluster\14112013-CoreCluster\Day 2\shoppingAPP\shoppingAPP
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Home/Careers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJlZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Home/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Products/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Products/HotSellingProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSG90U2VsbGluZ1Byb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Products/Offers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcT2ZmZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Products/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikhi/OneDrive/Desktop/14112023 - Microsoft Core Cluster/14112013-CoreCluster/Day 2/shoppingAPP/shoppingAPP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fasei57z1l
