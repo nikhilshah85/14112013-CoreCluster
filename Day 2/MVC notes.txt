@@ -20,6 +20,10 @@ ASP.Net Core MVC Development begins tomorrow
 			Razor syntax (short hand Html, css, JS)
 			- You make client side REST API / WebAPI calls useing Fetch
 
+
+		shared folder - layout page (this is master page) - u can have multiple layout pages
+			      - partial views / partial pages (custom control)
+
 		C - Controller (.cs file) - collect data from Model pass it to view
 					    collect data from view and pass it to Model
 					security, authentication, encryption, etc...

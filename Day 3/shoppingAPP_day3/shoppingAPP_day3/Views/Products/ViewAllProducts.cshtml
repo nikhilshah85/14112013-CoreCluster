@@ -1,0 +1,64 @@
+﻿
+
+<h1 style="text-align:center"> Products List </h1>
+
+
+<table class="table table-bordered">
+
+    <thead style="background-color:blue;color:white;text-align:center">
+        <th> Id </th>
+        <th> Name </th>
+        <th> Category </th>
+        <th> Price </th>
+        <th> Is Available </th>
+        <th colspan="3"> Action </th>
+
+    </thead>
+
+    @foreach (var item in ViewBag.Products)
+    {
+        @if (item.pIsInStock == false)
+        {
+            <tr style="background-color:orangered">
+                <td> @item.pId </td>
+                <td> @item.pName </td>
+                <td> @item.pCategory </td>
+                <td> @item.pPrice </td>
+                <td> @item.pIsInStock </td>
+                <td> <button class="btn btn-primary"> Wish List </button>  </td>
+                <td> <button class="btn btn-warning"> Wish List </button>  </td>
+                <td> <button class="btn btn-danger"> Wish List </button>  </td>
+            </tr>
+        }
+        else
+        {
+
+        <tr style="background-color:lime">
+            <td> @item.pId </td>
+            <td> @item.pName </td>
+            <td> @item.pCategory </td>
+            <td> @item.pPrice </td>
+            <td> @item.pIsInStock </td>
+            <td> <button class="btn btn-primary"> Add </button>  </td>
+                <td> <button class="btn btn-warning"> Edit </button>  </td>
+                <td> <button class="btn btn-danger"> Delete </button>  </td>
+
+        </tr>}
+    }
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
