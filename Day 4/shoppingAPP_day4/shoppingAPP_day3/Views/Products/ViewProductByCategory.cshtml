@@ -1,0 +1,37 @@
+﻿
+
+<h1 style="text-align:center"> Search by Category </h1>
+
+
+<form method="post">
+    <select name="category" class="form-control" onchange="this.form.submit()">
+    <option>Sports</option>
+    <option>Electronics</option>
+        <option>SUV</option>
+    <option>Accessories</option>
+    <option>TShirt</option>
+    <option>Phones</option>
+</select>
+</form>
+
+
+@if (@ViewBag.Category != null)
+{
+    foreach (var item in ViewBag.Category)
+    {
+        <div style="background-color:aqua">
+            <h3> Product Id : @item.pId </h3>
+            <h3> Product Name : @item.pName</h3>
+            <h3> Product Category : @item.pCategory</h3>
+            <h3> Product Price : @item.pPrice</h3>
+            <h3> Product Is In Stock : @item.pIsInStock </h3>
+        </div>
+    }
+  
+
+}
+else
+{
+    <h2 style="color:red"> Sorry product Not Found </h2>
+}
+

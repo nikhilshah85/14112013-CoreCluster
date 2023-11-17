@@ -1,0 +1,9 @@
+Task :
+
+Add a drop downlown list, with Available and Not Available
+
+allow users to choose from the dropdown and display the data accordingly in a table
+
+Monday : Entity Framework with SQL Server for ASP.net mvc
+
+	Perform CRUD operations with database

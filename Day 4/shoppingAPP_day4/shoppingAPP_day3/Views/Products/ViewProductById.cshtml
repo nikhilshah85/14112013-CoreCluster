@@ -1,0 +1,33 @@
+﻿
+
+<h1 style="text-align:center"> Search Product </h1>
+
+
+
+ 
+
+<form method="post">
+    <input type="number" placeholder="please enter product Id" class="form-control" name="id"/>
+    <button type="submit" class="btn btn-primary">Search</button>
+
+  
+</form>
+    
+@if (@ViewBag.ProductById != null)
+{
+    <div style="background-color:aqua">
+        <h3> Product Id : @ViewBag.ProductById.pId </h3>
+        <h3> Product Name : @ViewBag.ProductById.pName</h3>
+        <h3> Product Category : @ViewBag.ProductById.pCategory</h3>
+        <h3> Product Price : @ViewBag.ProductById.pPrice</h3>
+        <h3> Product Is In Stock : @ViewBag.ProductById.pIsInStock </h3>
+    </div>
+
+}
+else
+{
+    <h2 style="color:red"> Sorry product Not Found </h2>
+}
+
+
+
