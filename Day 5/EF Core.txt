@@ -1,0 +1,278 @@
+Day 5:
+
+ASP.Net MVC APP with Entity Framework Core on SQL Server haveing CRUD operations
+
+your first full fledged application with database - user can add, update and delete values from sql server
+
+step 1 : create a new database with table and some sample data
+
+create database shoppingDB
+
+use shoppingDB
+
+create table productsList
+(
+	pId int primary key,
+	pName varchar(20),
+	pCategory varchar(20),
+	pPrice int,
+	pIsInStock bit
+)
+
+insert into productsList values(101,'Pepsi','Çold-Drink',80,1)
+insert into productsList values(102,'Jeep Compass','SUV',80,1)
+insert into productsList values(103,'Fanta','Çold-Drink',80,1)
+insert into productsList values(104,'Samsung TV','Electronics',80,1)
+insert into productsList values(105,'IPhone','Phone',80,0)
+insert into productsList values(106,'Sandwitch','Snaks',80,1)
+insert into productsList values(107,'Fossil Q','Watch',80,0)
+
+step 2 : create a new .Net core application, we will have ASP.net mvc - shoppingAPPMVC_EF
+
+This is a blank core app, it has no idea about ADO.Net or EF core, we have to add nuget packages for the same
+
+
+step 3 : Add below nuget packages - 4 packages, it is recommended to add them in sequence
+
+	solution explorer -> right click project name -> Manage Nuget packages
+
+	browse -> search box -> EntityFrameworkCore
+
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+
+step 4 : ready your connection string
+
+	Windows Authentication
+	"server=NIKHILPC\TRAINING_SERVER; database=shoppingDB; integrated security=true"
+
+
+	Server Authentication
+	"server=NIKHILPC\TRAINING_SERVER; database=shoppingDB;userid= ;password="	
+
+
+step 5: Download poco classes (Plain C Sharp object)
+	EF - Entity framework is based on open source pattern - ORM - Object relational Mapping, this framework maps database 	objects to frontend
+
+		Database = DBContext (File) .cs
+		Table = Class
+		Columns = Properties
+		datatypes = primitive datatypes
+		constraints = Data Annotations
+		procedures/Functions = methods
+
+
+	tools -> Nuget package manager -> Package manager console 
+
+
+Scaffold-DbContext "server=NIKHILPC\TRAINING_SERVER; database=shoppingDB; integrated security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+
+Check the solution explorer -> chech models folder -> it will have EF Folder -> which will have DbContext file and Entity Files	
+
+step 6 : Add MVC Controller with EF Core support 	
+	solution explorer -> right click controller folder -> Add Controller
+	Choose
+	MVC Controller with Views, useing Entity Framework
+
+	by default controller is useing DI - dependency injection, but only half part is configured, half we have to based on the entity type and operation type (we have no idea about DI) - so we will remove the halfly configured DI
+
+	line 14 : instantate new object of DBContext class
+	private readonly ShoppingDbContext _context = new ShoppingDbContext();
+
+
+	Line 16-19 comment the constructor
+	//public productsController(ShoppingDbContext context)
+        //{
+        //    _context = context;
+        //}
+
+
+Step 7 : update the layout page to have a new link for products (index page)
+
+  <li class="nav-item">
+      <a class="nav-link text-dark" asp-area="" asp-controller="products" asp-action="Index">Products</a>
+  </li>
+
+
+-------
+post development
+
+Add a new table - customers in the same database
+	customer - cId, cName, cType, cWalletBalance, cIsActive
+	add sample data
+
+
+create table Customers
+(
+	cId int primary key,
+	cName varchar(20),
+	cType varchar(20),
+	cWalletBalance int,
+	cIsActive bit
+)
+
+insert into Customers values(501,'Nikhil','Regular',2000,1)
+insert into Customers values(502,'Preeti','Regular',3000,1)
+insert into Customers values(503,'Yash','Defaulted',4000,1)
+insert into Customers values(504,'Kriti','Regular',5000,1)
+insert into Customers values(505,'Sunny','InActive',12000,0)
+
+
+to include this table in the current project, we will have to fire the same command again with -Force from console
+
+
+check the EF folder it shoulf have new Entity class
+
+repeat step 6 for the new controller and file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
