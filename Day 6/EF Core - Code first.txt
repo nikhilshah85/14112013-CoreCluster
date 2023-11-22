@@ -1,0 +1,12 @@
+EF Core (ORM) - There are 2 approach to work with 
+
+1. Database first approach - you design database first, and create application based on the same
+	-- use this appoach when application is data driven, all the logic, constraints, calculations, 	  formatting, conversion of data is configured/dependended on database
+	
+	-- you have a strong backend team
+
+	-- you already have a database in place, designed in past
+
+2. Code first approach - you write code (create classes and properties), create UI first and based on 			that your database is created 
+
+	-- use this when application is UI driven, all the logic, calculation, formatting is done in 	   front end and database is just used to store the data
