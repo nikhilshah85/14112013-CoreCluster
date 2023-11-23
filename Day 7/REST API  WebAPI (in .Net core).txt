@@ -1,0 +1,35 @@
+REST API / WebAPI (in .Net core)
+
+--This is all about data - it has no UI
+--All the major applciation today (especially mobile apps) - they exchage data in JSON format, which is provided by REST          
+  API - Service
+--It is responsible to connect to datasource(Database,big data, file, network, application logs etc..) and perform CRUD operations
+--All the Angular, React, Node applciation they are all based on javascript, which cannot connect to database, thuswe need 	a middle ware which can connect to backeend and provide data
+
+First REST API / WebAPI
+
+1. Create a database and add tables with data
+	(we have used the same database as of ASP.net MVC and EF - shopping app, sql script is available in that folder)
+2. Create a new WebAPI application (ASP.net webapi)
+3. We need to install nuget packges for working with DB, we will use Entity framework core
+4. Ready your connection string, we need this to execute EF core command from console
+	"server=NIKHILPC\TRAINING_SERVER;database=shoppingDB;integrated security=true;trustservercertificate=true"
+
+	tools -> Nuget package manager -> Package manager console 
+
+5. right click controller folder - add controller - API - api controller with EF
+	choose table name as model
+	choose dbcontextfile as dbcontext
+	press enter
+6. it uses DI by default, we will remove the same 
+	comment the constructor
+	instantiate new object of DBContext class
+
+7. repeat the same for all the tables (step 5 and 6)
+
+8. build and run the application 
+
+
+
+
+
