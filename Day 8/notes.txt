@@ -1,0 +1,76 @@
+Day 8 : Consume Rest API in UI application (This could be done from MVC, Angular, React, Node,desktop application  etc..)
+
+We will be doing this with MVC
+
+MVC is an server side application development framework, 
+.Net core supports makeing api calls in 2 ways
+
+Desktop application - this are applications which does not know/understand Javasript
+
+1. Client Side Calls - This is fastest, not safe and secure
+	use this when your data/server applications are not working on confendential / sencetieve data like banking/hotel booking/ insurance/ etc..
+	can be used for makeing calls to services like
+	temperature 
+	currency exchange
+	get flight information (schedule)
+
+	we use Fetch API, an api built into browser, fetch api is an W3C and ECMA standard
+	(other api's can be used as well, like JQuery, axios etc..)
+
+2. Server side calls : This is safest, a little bit slower than the above one, as it has to hop DNS
+		this is more secured than the above one
+
+		we use HttpClient to make calls
+
+we will learn both of this 
+
+	both the above API are Async 
+
+
+----------------------------------------------
+	Fetch api is a standard api, it supports async calls, returns a promise, thus a guranteed api
+	this is supporting a try catch finally block
+
+
+	then catch and finally
+
+	fetch(url).then(incoming data type)	
+		  .then(result) { javascript to display the result)
+		  .catch(err) { javascript to display the error)
+		  .finally() { ....}
+
+----------------------------------------------------------------
+1. create a new MVC application
+2. in the controller, add a new ActionMethod - postData
+3. Add a view based on above
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

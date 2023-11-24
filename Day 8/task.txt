@@ -1,0 +1,16 @@
+Task : 
+
+Display data from below url 
+https://jsonplaceholder.typicode.com/users
+
+display only below details in a table
+Name
+UserName
+Email
+City result[i].address.city (i gave you a complete answer instead of hint)
+lat
+lng
+companyname
+catchphase
+
+
