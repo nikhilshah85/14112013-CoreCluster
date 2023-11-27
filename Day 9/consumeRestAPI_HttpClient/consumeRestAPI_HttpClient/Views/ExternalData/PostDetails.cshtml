@@ -1,0 +1,16 @@
+﻿
+
+<h1 style="text-align:center"> Post Data from JSON placeholder - HttpClient call </h1>
+
+<table class="table table-striped">
+    @foreach (var item in ViewBag.post)
+    {
+     
+        <tr>
+            <td> @item.id </td>
+            <td> @item.userId </td>
+            <td> @item.title </td>
+            <td> @item.body </td>
+        </tr>
+    }
+</table>

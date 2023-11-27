@@ -1,0 +1,17 @@
+Once done with this, 
+
+task : Make an webapi call in MVC, useing HttpClient to Users
+
+https://jsonplaceholder.typicode.com/users
+
+display
+
+id, name, username, city, lat, lng, companyname, companycatchphase
+
+-----------------------
+
+you should try to make a call to the own api we developed in last to last session
+
+you will get an error - CORS, once you get it please the complete error message in chat
+
+we will see how to fix the same

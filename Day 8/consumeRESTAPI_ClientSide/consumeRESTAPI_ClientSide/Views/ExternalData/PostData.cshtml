@@ -13,6 +13,9 @@
 
         var myDataUrl = "https://jsonplaceholder.typicode.com/posts";
 
+
+        // fetch(dataToBeAdded/ToBeDeleted/ToBeUpdates,'url')....
+
         fetch(myDataUrl).then(dataFormat => dataFormat.json())
             .then(result => { 
                 console.log(result);
