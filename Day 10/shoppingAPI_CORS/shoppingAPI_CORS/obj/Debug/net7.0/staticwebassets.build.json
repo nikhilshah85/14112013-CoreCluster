@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8J8fmklfj0PbbBj/chCaSifI7h3J8k8cWfWz0CoX5TM=",
+  "Source": "shoppingAPI_CORS",
+  "BasePath": "_content/shoppingAPI_CORS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

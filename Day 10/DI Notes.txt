@@ -1,0 +1,111 @@
+DI in .Net core - MVC Application useing EF Core
+
+1. Created a database - shoppingDB 
+2. added 2 tables to the same - productList and Customers - added some sample data
+3. create a new MVC webapplication - shopingDB_DI
+4. Add 4 nuget packages for EF Core
+5. Execute Scaffold-DB connectionstring to download poco classes
+6. create controller for both the tables useing EF , this controller will be halfly with DI, rest we 	have to learn and configure
+
+
+	-----------------------------------------------------------------------------------------
+	DI - this is targeted towards - performace of application/user interaction with memory utilization
+
+
+
+		As a develoer we create  lots of objects - but we never write any code to destroy the same
+		- we do not write destructor - (in .net we do not have this anyways)
+		- we do not implement IDisposable most of the developers
+		- we do not implement try - catch - block most of the time
+		- we also do not write code to clear resource  - eg.close the connection string, unreference the POCO objects
+
+	---- Why ????
+		because we think GC will come and clear everything for us (which is true, not false)
+		but we dont know when will GC show up (it comes at a Random time)
+		in a web application - we have 1000's of users every hour, objects will keep on increasing and if GC does not 		show up, application memory will keep getting full and affect the performance of an application 
+
+	-- Calling GC manually is also 1 of the solution, but its a manual process
+
+	This is a problem with every framework - Java, Angular, react, .net etc...c++
+		insted, what new open souce technologies do is, it says developers please create any object
+	**framework will create object for you and destroy the object for you (do not use new keyword)
+
+
+	--How ? just provide information in the configuration of applicaiton, and specify when to create the object and when 		to destroy the object
+
+
+		--Firsty, lets understand there are the types of object
+
+			1. which will give different data/info to users on every request - transcient/percall
+				eg. stock market, cricket score, currency exchange - when live 
+			2. Where the data needs to be resued by same user - scoped/persession
+				eg. bankaccount login / employee logging, 
+			3. where data is same for every user accross internet, network - singleton/application state
+				eg. train-flight ticket schedule
+
+
+		once you understand which type of object this is, you will provide the same in program.cs in .net core 			application 
+
+
+		1. do not create a new instance of any object, just create a variable of the same
+			eg.  ShoppingDbContext _context;
+			     Employee _empObj;
+
+		2. When should this object be created by runtime
+			this could be, constructor, method, property
+			
+		 public CustomersController(ShoppingDbContext context)
+ 		{
+     			_context = context;
+	        }		
+		parameter here will get the reference of the object created by runtime
+
+		3. we need to specify to runtime to create the object, and when to destroy the object, this is in program.cs
+			useing 1 of the method
+
+a. addTranscient(fully qualiafied class name) - per call (on every call new object is created and destroyed after response if given to caller)
+b. addScoped(fully qualified class name) - per session (new object for every new user, will destoy it when user logs out, session is ended)
+c. addSingleTon(fully qualified class name) - per application (singleton obj, object created when server starts, destroyed when sropped)\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+DI and CORS
+
+1. create a new REST API / WebAPI application
+2. use EF core to download poco classes from shoppingDB context
+3. add 4 nuget packages, execute scaffold-db contecxt 
+4. create API controllers for both the tables, products and customers
+5. test the api and make sure it returns all the JSON data
+
+6. create a new MVC/Angular/React - UI application to consume this API - (clients do it, or you could be a client who wants to consume the api and display data on page)
+
+
+	we will use fetch api to consume data from 
+	https://localhost:7093/api/products
+
+	you get this error when you try to consume the data
+
+	 Access to fetch at 'https://localhost:7093/api/products' from origin 'https://localhost:7292' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+
+	thus the REST API developer will have to provide access to user
+	They create CORS Policy where they can decide, which applications(domains/clients) will get access to which controller, methods, 		operation(get, put, post, delete)
+
+	based on the type of client, they will give access to controller and methods
+
+	eg. Customers can access only get products and get products by iD, they cannot access addproduct, deltee and update product
+
+7. to configure below are the steps
+	a. add CORS nuget package - Microsoft.AspNet.WebApi.Cors
+
+
+
+8. in program.cs - add CORS service and then add CORS middleware
+
+builder.Services.AddCors(policies =>
+{
+    policies.AddDefaultPolicy(bydefault =>
+    {
+        bydefault.AllowAnyHeader();
+        bydefault.AllowAnyMethod();
+        bydefault.AllowAnyOrigin();
+    });
+
+
+    //We will have to add [CORS("customerPolicy")] Above controller name in controller class so that, only customers from Amazon.com can make only GET and POST calls
+    policies.AddPolicy("customerPolicy", policy =>
+    {
+        policy.AllowAnyHeader().WithOrigins("https://wwww.amazon.com").WithMethods(new string[] { "GET", "POST" });
+    });
+});
+
+
+9. app.UseCors();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

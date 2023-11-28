@@ -1,0 +1,33 @@
+﻿
+
+<h1> Product Details </h1>
+
+<button class="btn btn-primary" onclick="getProducts()" > Show Products </button>
+<table class="table table-bordered table-striped"></table>
+
+
+<script>
+    function getProducts()
+    {
+        var url = "https://localhost:7093/api/products";
+
+        fetch(url).then(dataType => dataType.json())
+            .then(productsResult => {
+
+                for (var i = 0; i < productsResult.length; i++) { 
+                    $("table").append("<tr>" +
+                        "<td>" + productsResult[i].pId + "</td>" +
+                        "<td>" + productsResult[i].pName + "</td>" +
+                        "<td>" + productsResult[i].pCategory + "</td>" +
+                        "<td>" + productsResult[i].pPrice + "</td>" +
+                        "<td>" + productsResult[i].pIsInStock + "</td>" +
+                    
+                    + "</tr>")
+                }
+
+            })
+
+
+
+    }
+</script>
