@@ -1,0 +1,17 @@
+
+Identity Framework 
+1. oAuth - security - Authentication and Authorization
+	Open Source Authentication 
+
+	Part of Self service for end-users/clients for
+		--Create/register/sign-up for a new account
+		--Forgot password/reset reset password
+		--create update delete  account
+		--configure 2FA for them self - with mobile, email, Auth apps
+	--Allows users to user their existing creadentials - Facebook, gmail, twitter, company etc..
+			once they connect useing any of the above account, we can access (upon their 			permission) - their friends, activities, birthdays etc.
+		
+		--For developers, create a login page, register page, forgot password, logout etc..
+		-- it will use ORM patter to work with database - code first approach
+
+		

@@ -1,0 +1,23 @@
+Task Day : Need to complete this and submit the same for scores
+
+1. Create a new RestAPI application for employeeManagement
+	This will have below things to serve
+		empno, empName, empDesignation, empSalary, empDeptNo, empIsPermenant
+		deptNo, deptName, deptLocation, deptEmail
+
+		you will 2 tables for both of them, this time it will be PK and FK in related
+			deptNo from deptInfo table will be primary key (Master table)
+			empDeptNo from empInfo table be the foreign key
+
+2. use EF Core, database first approach to create, test and run the api application 
+	Use DI for the same
+
+	API appliction will allow, CRUD opertations on both the above tables
+
+3. Create an MVC application empManagement_MVC - it will have controllers - empController and deptController which will make calls to the above rest api 
+	a. display all the employees - in a view
+	b. display all the dept - in a view
+	c. Create a form to post new employee (POST) - actual task  - test the logic - research
+					above things you have learned it during the session
+
+https://codeshare.io/xv9J6k
